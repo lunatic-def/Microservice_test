@@ -1,0 +1,17 @@
+Cloudmap -> namespace on route 53
+Appmess 
+
+Musicbox-9000 -> frontend
+flamenco-9001, opera-9002 -> backend  
+
+
+load balencer: 
+1) target group - {9000-musicbox-/music-service*}
+enale service discovery and create namespace and discovery service for Music Box, flameco, opera-servicce
+
+Define a AWS Cloud Map Namespace, which allows for discovery of services within a VPC.
+Create a Purchases microservice using .NET ASP.NET Core Web API framework. Expose a simple HTTP GET endpoint in the Purchases microservice to return the list of book purchase objects.
+Create a AWS ECS Service for the Purchases microservice. Attach this service definition to the Cloud Map Namespace created in Step-1.
+Create a Recommendations microservice using .NET ASP.NET Core Web API framework. Expose a simple HTTP GET endpoint in the Recommendations microservice to return the list of book recommendation objects.
+Create a AWS ECS Service for the Recommendations microservice. Attach this service definition to the Cloud Map Namespace created in Step-1.
+Create a Dashboard microservice using .NET ASP.NET Core Web API framework. Expose a simple HTTP GET endpoint in the Dashboard microservice to return a Dashboard object that has the list of purchases and list of recommendations fetched from the Purchases and Recommendations microservices.
